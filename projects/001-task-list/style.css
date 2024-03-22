@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color: var(--color-background);
+}
+
+:root {
+    --color-background: #F3F3F3;
+    --color-header-text: #D6C5E9;
+    --color-main-text: #656565;
+    --color-secondary-text: #c0c0c0;
+    --font-size-main: 18px;
+    --font-size-secondary: 16px;
+    --padding: 15px 20px;
+}
+
+.header {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+
+    text-align: center;
+    color: var(--color-header-text);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border: 1px solid var(--color-secondary-text);
+}
+
+.input__text {
+    width: 399px;
+
+    padding: var(--padding);
+
+    font-size: var(--font-size-main);
+    font-weight: 400;
+
+    color: var(--color-main-text);
+    border: 1px solid var(--color-secondary-text);
+}
+
+.list {
+    width: 400px;
+    list-style: none;
+}
+
+.item {
+    padding: var(--padding);
+
+    font-size: var(--font-size-main);
+
+    border: 1px solid var(--color-secondary-text);
+
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.footer {
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 16px;
+
+    color: var(--color-secondary-text);
+    line-height: 26px;
+}
